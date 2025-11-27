@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio Digital Interativo - Augusto Lael, Social Media, Video Maker e Story Maker">
+    <meta name="keywords" content="portfólio, social media, video maker, story maker, desenvolvedor">
+    <meta name="author" content="Augusto Lael">
+    <meta property="og:title" content="Portfólio Augusto Lael">
+    <meta property="og:description" content="Portfólio profissional de Augusto Lael - Social Media, Video Maker e Story Maker">
+    <meta property="og:type" content="website">
+    <title>Portfólio Augusto Lael - Social Media | Video Maker | Story Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <h1 class="navbar-title">Augusto Lael</h1>
+            
+            <!-- Menu Desktop -->
+            <div class="nav-menu">
+                <button class="nav-link" data-section="landing" aria-label="Ir para seção Início">Início</button>
+                <button class="nav-link" data-section="about" aria-label="Ir para seção Sobre">Sobre</button>
+                <button class="nav-link" data-section="skills" aria-label="Ir para seção Habilidades">Habilidades</button>
+                <button class="nav-link" data-section="portfolio" aria-label="Ir para seção Portfólio">Portfólio</button>
+                <button class="nav-link" data-section="contact" aria-label="Ir para seção Contato">Contato</button>
+            </div>
+
+            <!-- Controles -->
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema claro/escuro">
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                
+                <!-- Menu Mobile -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Expandido -->
+        <div id="mobile-menu" class="mobile-menu" style="display: none;">
+            <button class="mobile-nav-link" data-section="landing">Início</button>
+            <button class="mobile-nav-link" data-section="about">Sobre</button>
+            <button class="mobile-nav-link" data-section="skills">Habilidades</button>
+            <button class="mobile-nav-link" data-section="portfolio">Portfólio</button>
+            <button class="mobile-nav-link" data-section="contact">Contato</button>
+        </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="landing" class="section landing-section">
+        <div class="container landing-content">
+            <div class="landing-text">
+                <h1 class="landing-title">Augusto <span class="highlight">Lael</span></h1>
+                <p class="landing-subtitle">Social Media | Video Maker | Story Maker</p>
+                <p class="landing-description">
+                    Criando conteúdo visual impactante há 3 anos. Desenvolvedor Front-end com paixão por storytelling digital.
+                </p>
+            </div>
+            
+            <button class="cta-button" data-section="portfolio">Ver Portfólio</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Olá! Sou Augusto Lael, um profissional versátil com 26 anos de idade. Sou formado em Análise e Desenvolvimento de Sistemas e atuo há 3 anos como Social Media, Video Maker e Story Maker.
+                    </p>
+                    <p>
+                        Combino minha expertise em desenvolvimento front-end com criatividade visual para criar conteúdos digitais que engajam e inspiram. Minha paixão é transformar ideias em histórias visuais memoráveis.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3>Informações Pessoais</h3>
+                    <ul class="info-list">
+                        <li><strong>Nome:</strong> Augusto Lael</li>
+                        <li><strong>Idade:</strong> 26 anos</li>
+                        <li><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas</li>
+                        <li><strong>Experiência:</strong> 3 anos na área</li>
+                        <li><strong>Especialidade:</strong> Social Media & Video Making</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>• Estratégia de Conteúdo</li>
+                        <li>• Gestão de Redes</li>
+                        <li>• Community Management</li>
+                        <li>• Análise de Dados</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Video Making</h3>
+                    <ul>
+                        <li>• Edição de Vídeo</li>
+                        <li>• Roteirização</li>
+                        <li>• Produção</li>
+                        <li>• Motion Graphics</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Story Making</h3>
+                    <ul>
+                        <li>• Narrativa Visual</li>
+                        <li>• Copywriting</li>
+                        <li>• Branding</li>
+                        <li>• Criatividade</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>• HTML5</li>
+                        <li>• CSS3</li>
+                        <li>• JavaScript</li>
+                        <li>• React</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfólio</h2>
+            
+            <!-- Videos -->
+            <div class="portfolio-subsection">
+                <h3>Vídeos em Destaque</h3>
+                <div class="videos-grid">
+                    <!-- Vídeo 1 -->
+                    <video width="100%" height="auto" controls style="border-radius: 0.5rem;">
+                        <source src="Cópia de GRAND OPENING.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5
+                    </video>
+                    
+                    <!-- Vídeo 2 -->
+                    <video width="100%" height="auto" controls style="border-radius: 0.5rem;">
+                        <source src="GESTOR POTÊNCIA.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5
+                    </video>
+                    
+                    <!-- Vídeo 3 -->
+                    <video width="100%" height="auto" controls style="border-radius: 0.5rem;">
+                        <source src="HOSPITAL BELEM - TAMIRIS.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5
+                    </video>
+                </div>
+                <p class="portfolio-tip">💡 Dica: Seus vídeos estão sendo exibidos acima</p>
+            </div>
+
+            <!-- Images -->
+            <div class="portfolio-subsection">
+                <h3>Projetos de Imagem</h3>
+                <div class="images-grid">
+                    <div class="image-placeholder">
+                        <img src="1.png" alt="Projeto 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="2.png" alt="Projeto 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="3.png" alt="Projeto 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="4.png" alt="Projeto 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="5.png" alt="Projeto 5" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                    </div>
+                </div>
+                <p class="portfolio-tip">💡 Dica: Suas imagens estão sendo exibidas acima</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            
+            <div id="success-message" class="success-message" style="display: none;">
+                ✓ Mensagem enviada com sucesso! Obrigado por entrar em contato.
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome *</label>
+                    <input type="text" id="name" name="name" required aria-label="Seu nome">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required aria-label="Seu email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem *</label>
+                    <textarea id="message" name="message" rows="5" required aria-label="Sua mensagem"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Augusto Lael. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
